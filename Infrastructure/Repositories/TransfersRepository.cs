@@ -1,12 +1,13 @@
 ﻿using Marketplace.Domain.Entities;
+using Marketplace.Domain.Interface;
 using Marketplace.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace Marketplace.Infrastructure.Repositories
 {
-    public class TransfersRepository(MarketplaceDbContext context)
+    public class TransfersRepository(MarketplaceDbContext context) : ITransfersRepository
     {
-        public async Task<List<Transfer>> getByUser(User user) 
+        public async Task<List<Transfer>> GetByUser(User user) 
         {
             return await context.Transfer.Where(t => t.Buyer != null && t.Buyer.Id == user.Id || t.Seller != null && t.Seller.Id == user.Id).ToListAsync();
         }

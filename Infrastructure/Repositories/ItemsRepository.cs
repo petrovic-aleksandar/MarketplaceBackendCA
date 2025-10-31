@@ -29,14 +29,14 @@ namespace Marketplace.Infrastructure.Repositories
             return item;
         }
 
-        public async Task<Item> Update(Item item)
+        public async Task<Item?> Update(Item item)
         {
             context.Item.Update(item);
             await context.SaveChangesAsync();
             return item;
         }
 
-        public async Task<Item> Delete(Item item)
+        public async Task<Item?> Delete(Item item)
         {
             item.IsDeleted = true;
             context.Item.Update(item);

@@ -1,10 +1,11 @@
 ﻿using Marketplace.Domain.Entities;
+using Marketplace.Domain.Interface;
 using Marketplace.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace Marketplace.Infrastructure.Repositories 
 {
-    public class UsersRepository(MarketplaceDbContext context)
+    public class UsersRepository(MarketplaceDbContext context) : IUsersRepository
     {
         public async Task<User?> GetById(int id)
         {

@@ -3,6 +3,6 @@
     public class AddPaymentCommand
     {
         public int SellerId { get; set; }
-        public decimal Amount { get; set; }
+        public double Amount { get; set; }
     }
 }

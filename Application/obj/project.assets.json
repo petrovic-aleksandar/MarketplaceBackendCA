@@ -27,39 +27,45 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\aleksandar.petrovic\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\aleksandar.petrovic\\Desktop\\Dotnet workspace\\MarketplaceBackendCA\\Application\\Application.csproj",
       "projectName": "Marketplace.Application",
-      "projectPath": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\obj\\",
+      "projectPath": "C:\\Users\\aleksandar.petrovic\\Desktop\\Dotnet workspace\\MarketplaceBackendCA\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\aleksandar.petrovic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aleksandar.petrovic\\Desktop\\Dotnet workspace\\MarketplaceBackendCA\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aleksandar.petrovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://apollo.telekomcg.com/nuget/nuget": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Domain\\Domain.csproj"
+            "C:\\Users\\aleksandar.petrovic\\Desktop\\Dotnet workspace\\MarketplaceBackendCA\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\aleksandar.petrovic\\Desktop\\Dotnet workspace\\MarketplaceBackendCA\\Domain\\Domain.csproj"
             }
           }
         }
@@ -74,7 +80,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -95,7 +101,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\transfers\\commands\\addwithdrawalcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\transfers\\commands\\addwithdrawalcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\items\\commands\\additemcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\items\\commands\\additemcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\transfers\\commands\\addwithdrawalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\transfers\\commands\\addwithdrawalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\items\\commands\\additemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\items\\commands\\additemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\transfers\\commands\\purchaseitemcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\transfers\\commands\\purchaseitemcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0480E325-294D-447C-B83F-5E44379DDACD}|Domain\\Domain.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\domain\\interface\\iitemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0480E325-294D-447C-B83F-5E44379DDACD}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\iitemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\transfers\\commands\\purchaseitemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\transfers\\commands\\purchaseitemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Application",
-              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Application.csproj",
-              "RelativeDocumentMoniker": "Application\\Application.csproj",
-              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Application.csproj",
-              "RelativeToolTip": "Application\\Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-30T22:34:40.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddItemCommand.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Items\\Commands\\AddItemCommand.cs",
-              "RelativeDocumentMoniker": "Application\\Items\\Commands\\AddItemCommand.cs",
-              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Items\\Commands\\AddItemCommand.cs",
-              "RelativeToolTip": "Application\\Items\\Commands\\AddItemCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA==",
+              "Title": "AddWithdrawalCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Transfers\\Commands\\AddWithdrawalCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Transfers\\Commands\\AddWithdrawalCommandHandler.cs",
+              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Transfers\\Commands\\AddWithdrawalCommandHandler.cs",
+              "RelativeToolTip": "Application\\Transfers\\Commands\\AddWithdrawalCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T22:33:37.774Z",
+              "WhenOpened": "2025-10-31T00:16:49.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddItemCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Items\\Commands\\AddItemCommandHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Items\\Commands\\AddItemCommandHandler.cs",
-              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Items\\Commands\\AddItemCommandHandler.cs",
-              "RelativeToolTip": "Application\\Items\\Commands\\AddItemCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Title": "AddWithdrawalCommand.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Transfers\\Commands\\AddWithdrawalCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Transfers\\Commands\\AddWithdrawalCommand.cs",
+              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Transfers\\Commands\\AddWithdrawalCommand.cs",
+              "RelativeToolTip": "Application\\Transfers\\Commands\\AddWithdrawalCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T22:32:31.557Z",
+              "WhenOpened": "2025-10-31T00:16:43.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IItemsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Domain\\Interface\\IItemsRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IItemsRepository.cs",
+              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Domain\\Interface\\IItemsRepository.cs",
+              "RelativeToolTip": "Domain\\Interface\\IItemsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T00:15:40.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PurchaseItemCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Transfers\\Commands\\PurchaseItemCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Transfers\\Commands\\PurchaseItemCommandHandler.cs",
+              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Transfers\\Commands\\PurchaseItemCommandHandler.cs",
+              "RelativeToolTip": "Application\\Transfers\\Commands\\PurchaseItemCommandHandler.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T00:14:29.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PurchaseItemCommand.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Transfers\\Commands\\PurchaseItemCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Transfers\\Commands\\PurchaseItemCommand.cs",
+              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Transfers\\Commands\\PurchaseItemCommand.cs",
+              "RelativeToolTip": "Application\\Transfers\\Commands\\PurchaseItemCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T00:14:27.958Z",
               "EditorCaption": ""
             }
           ]

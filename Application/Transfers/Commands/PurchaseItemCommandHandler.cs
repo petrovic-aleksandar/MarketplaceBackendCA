@@ -1,6 +1,5 @@
 ﻿using Marketplace.Domain.Entities;
 using Marketplace.Domain.Interface;
-using System;
 
 namespace Marketplace.Application.Transfers.Commands
 {
@@ -10,6 +9,7 @@ namespace Marketplace.Application.Transfers.Commands
         {
             var item = await itemsRepository.GetById(command.ItemId) ?? throw new Exception("Item not found");
             var buyer = await usersRepository.GetById(command.BuyerId) ?? throw new Exception("Buyer not found");
+
             Transfer transfer = new()
             {
                 Amount = item.Price,
@@ -19,10 +19,13 @@ namespace Marketplace.Application.Transfers.Commands
                 Seller = item.Seller,
                 Item = item
             };
+
             var addedTransfer = await transfersRepository.AddTransfer(transfer);
+
             item.Seller = buyer;
             item.IsActive = false;
-            var updatedItem = await itemsRepository.Update(item) ?? throw new Exception("Failed to change item owner");
+            _ = await itemsRepository.Update(item) ?? throw new Exception("Failed to change item owner");
+
             return addedTransfer == null ? throw new Exception("Failed to add transfer") : addedTransfer.Id;
         }
     }

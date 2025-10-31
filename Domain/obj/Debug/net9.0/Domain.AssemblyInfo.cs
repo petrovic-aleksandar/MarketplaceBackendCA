@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Marketplace.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23bb43c4e56027028620df98014db6c530d58d11")]
 [assembly: System.Reflection.AssemblyProductAttribute("Marketplace.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Marketplace.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
