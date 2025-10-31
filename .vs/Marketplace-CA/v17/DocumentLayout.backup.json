@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\items\\commands\\additemcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\items\\commands\\additemcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|c:\\users\\pc\\dotnet workspace\\marketplace-ca\\application\\items\\commands\\additemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57DABB4-D26B-451F-8A6C-2D32FF5B7B29}|Application\\Application.csproj|solutionrelative:application\\items\\commands\\additemcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Application",
+              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "Application\\Application.csproj",
+              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Application.csproj",
+              "RelativeToolTip": "Application\\Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-30T22:34:40.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddItemCommand.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Items\\Commands\\AddItemCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Items\\Commands\\AddItemCommand.cs",
+              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Items\\Commands\\AddItemCommand.cs",
+              "RelativeToolTip": "Application\\Items\\Commands\\AddItemCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:33:37.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddItemCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Items\\Commands\\AddItemCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Items\\Commands\\AddItemCommandHandler.cs",
+              "ToolTip": "C:\\Users\\PC\\Dotnet workspace\\Marketplace-CA\\Application\\Items\\Commands\\AddItemCommandHandler.cs",
+              "RelativeToolTip": "Application\\Items\\Commands\\AddItemCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:32:31.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
