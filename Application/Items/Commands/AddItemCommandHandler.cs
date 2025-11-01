@@ -17,7 +17,8 @@ namespace Marketplace.Application.Items.Commands
                 Description = command.Description,
                 Price = command.Price,
                 Type = itemType,
-                Seller = seller
+                Seller = seller,
+                IsActive = true
             };
 
             var addedItem = await itemsRepository.Add(item);
