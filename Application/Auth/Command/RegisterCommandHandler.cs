@@ -9,7 +9,7 @@ namespace Marketplace.Application.Auth.Command
     {
         public async Task<int> Handle(RegisterCommand command)
         {
-            var existingUser = usersRepository.GetByUsername(command.Username);
+            var existingUser = await usersRepository.GetByUsername(command.Username);
             if (existingUser != null) throw new Exception("Username already exists");
 
             User newUser = new()
