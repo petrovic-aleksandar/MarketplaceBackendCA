@@ -1,7 +1,12 @@
 ﻿namespace Marketplace.Application.Images.Queries
 {
-    public class GetImagesByItemQuery
+    public record GetImagesByItemQuery
     {
         public int ItemId { get; set; }
+
+        public GetImagesByItemQuery(int itemId)
+        {
+            ItemId = itemId;
+        }
     }
 }

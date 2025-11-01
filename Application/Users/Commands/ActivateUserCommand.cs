@@ -1,7 +1,12 @@
 ﻿namespace Marketplace.Application.Users.Commands
 {
-    public class ActivateUserCommand
+    public record ActivateUserCommand
     {
         public int Id { get; set; }
+
+        public ActivateUserCommand(int id)
+        {
+            Id = id;
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Marketplace.Application.Users.Commands
 {
-    public class RegisterUserCommand
+    public record RegisterUserCommand
     {
         public required string Username { get; set; }
         public required string Password { get; set; }

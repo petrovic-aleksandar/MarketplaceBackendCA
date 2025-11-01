@@ -1,7 +1,7 @@
 ﻿namespace Marketplace.Application.Items.Queries
 {
-    public class GetItemByIdQuery
+    public class GetItemByIdQuery(int id)
     {
-        public int Id { get; set; }
+        public int Id { get; set; } = id;
     }
 }

@@ -1,7 +1,12 @@
 ﻿namespace Marketplace.Application.Items.Commands
 {
-    public class DeactivateItemCommand
+    public record DeactivateItemCommand
     {
         public int Id { get; set; }
+
+        public DeactivateItemCommand(int id)
+        {
+            Id = id;
+        }
     }
 }

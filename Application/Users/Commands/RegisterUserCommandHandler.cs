@@ -7,7 +7,6 @@ namespace Marketplace.Application.Users.Commands
 {
     public class RegisterUserCommandHandler(IUsersRepository usersRepository)
     {
-    {
         public async Task<int> Handle(RegisterUserCommand command)
         {
             User user = new()

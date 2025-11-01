@@ -6,7 +6,7 @@ namespace Marketplace.Application.Transfers.Queries
 {
     public class GetTransfersByUserQueryHandler(ITransfersRepository transfersRepository, IUsersRepository usersRepository)
     {
-        public async Task<List<TransferResponse>> Handle(GetTransfersQuery query) 
+        public async Task<List<TransferResponse>> Handle(GetTransfersByUserQuery query) 
         {
             var user = await usersRepository.GetById(query.UserId) ?? throw new Exception("User not found");
             List<Transfer> transfers = await transfersRepository.GetByUser(user);

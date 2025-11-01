@@ -3,7 +3,7 @@ using Marketplace.Domain.Interface;
 
 namespace Marketplace.Application.Images.Commands
 {
-    public class AddImageCommandHandler(IImagesRepository imagesRepository, IItemsRepository itemsRepository)
+    public class AddImageCommandHandler(IImagesRepository imagesRepository, IItemsRepository itemsRepository, IFileService fileService)
     {
         public async Task<int> Handle(AddImageCommand command) 
         {
@@ -11,15 +11,13 @@ namespace Marketplace.Application.Images.Commands
 
             var folder = Path.Combine("Images", item.Id.ToString());
             var fullPath = Path.Combine(folder, command.ImageName);
-            try
+            try 
             {
-                Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
-                using var stream = new FileStream(fullPath, FileMode.Create);
-                command.Image.CopyTo(stream);
+                fileService.SaveFile(fullPath, command.Image);
             }
             catch (Exception)
             {
-                throw new Exception("Error while saving the image");
+                throw;
             }
             var frontImage = await imagesRepository.GetFrontImageForItem(item);
             Image image = new()

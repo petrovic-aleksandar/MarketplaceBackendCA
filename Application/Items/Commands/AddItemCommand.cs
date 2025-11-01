@@ -1,6 +1,6 @@
 ﻿namespace Marketplace.Application.Items.Commands
 {
-    public class AddItemCommand
+    public record AddItemCommand
     {
         public required string Name { get; set; }
         public required string Description { get; set; }

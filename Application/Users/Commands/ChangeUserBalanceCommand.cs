@@ -1,6 +1,6 @@
 ﻿namespace Marketplace.Application.Users.Commands
 {
-    public class ChangeUserBalanceCommand
+    public record ChangeUserBalanceCommand
     {
         public int Id { get; set; }
         public double Amount { get; set; }

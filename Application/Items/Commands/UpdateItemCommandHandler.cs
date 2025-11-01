@@ -2,7 +2,7 @@
 
 namespace Marketplace.Application.Items.Commands
 {
-    internal class UpdateItemCommandHandler(IItemsRepository itemsRepository, IUsersRepository usersRepository, IItemTypesRepository itemTypesRepository)
+    public class UpdateItemCommandHandler(IItemsRepository itemsRepository, IUsersRepository usersRepository, IItemTypesRepository itemTypesRepository)
     {
         public async Task<int> Handle(UpdateItemCommand command)
         {

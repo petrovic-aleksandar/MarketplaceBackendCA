@@ -3,7 +3,7 @@ using Marketplace.Domain.Interface;
 
 namespace Marketplace.Application.Images.Queries
 {
-    internal class GetFrontImageForItemQueryHandler(IImagesRepository imagesRepository, IItemsRepository itemsRepository)
+    public class GetFrontImageForItemQueryHandler(IImagesRepository imagesRepository, IItemsRepository itemsRepository)
     {
         public async Task<ImageResponse> Handle(GetFrontImageForItemQuery query) 
         {

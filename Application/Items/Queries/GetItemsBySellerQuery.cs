@@ -1,7 +1,7 @@
 ﻿namespace Marketplace.Application.Items.Queries
 {
-    public class GetItemsBySellerQuery
+    public class GetItemsBySellerQuery(int sellerId)
     {
-        public int SellerId { get; set; }
+        public int SellerId { get; set; } = sellerId;
     }
 }

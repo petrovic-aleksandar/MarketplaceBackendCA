@@ -1,6 +1,6 @@
 ﻿namespace Marketplace.Application.Items.Commands
 {
-    public class UpdateItemCommand
+    public record UpdateItemCommand
     {
         public int Id { get; set; }
         public required string Name { get; set; }
