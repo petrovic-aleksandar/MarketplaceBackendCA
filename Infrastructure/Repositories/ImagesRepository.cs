@@ -17,9 +17,14 @@ namespace Marketplace.Infrastructure.Repositories
             return await context.Image.Where(x => x.Item == item).ToListAsync();
         }
 
-        public async Task<Image?> GetFrontImageForItem(Item item)
+        public async Task<Image?> GetFrontImageForItemAsync(Item item)
         {
             return await context.Image.Where(x => x.Item == item && x.IsFront == true).FirstOrDefaultAsync();
+        }
+
+        public Image? GetFrontImageForItem(Item item)
+        {
+            return context.Image.Where(x => x.Item == item && x.IsFront == true).FirstOrDefault();
         }
 
         public async Task<Image?> Add(Image image)

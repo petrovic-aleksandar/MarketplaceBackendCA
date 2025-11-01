@@ -8,7 +8,7 @@ namespace Marketplace.Application.Images.Queries
         public async Task<ImageResponse> Handle(GetFrontImageForItemQuery query) 
         {
             var item = await itemsRepository.GetById(query.ItemId) ?? throw new Exception("Item not found");
-            var image = await imagesRepository.GetFrontImageForItem(item) ?? throw new Exception("No front image for item found");
+            var image = await imagesRepository.GetFrontImageForItemAsync(item) ?? throw new Exception("No front image for item found");
             return ImageResponse.FromImage(image);
         }
     }

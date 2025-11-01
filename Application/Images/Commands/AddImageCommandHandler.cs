@@ -19,7 +19,7 @@ namespace Marketplace.Application.Images.Commands
             {
                 throw;
             }
-            var frontImage = await imagesRepository.GetFrontImageForItem(item);
+            var frontImage = await imagesRepository.GetFrontImageForItemAsync(item);
             Image image = new()
             {
                 Path = command.ImageName,

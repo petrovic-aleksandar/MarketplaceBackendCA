@@ -1,3 +1,4 @@
+using Marketplace.Application.Auth.Command;
 using Marketplace.Application.Images.Commands;
 using Marketplace.Application.Images.Queries;
 using Marketplace.Application.Items.Commands;
@@ -42,6 +43,10 @@ builder.Services.AddScoped<IItemsRepository, ItemsRepository>();
 builder.Services.AddScoped<IItemTypesRepository, ItemTypesRepository>();
 builder.Services.AddScoped<ITransfersRepository, TransfersRepository>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<LoginCommandHandler>();
+builder.Services.AddScoped<RefreshTokenCommandHandler>();
+builder.Services.AddScoped<RevokeTokenCommandHandler>();
+builder.Services.AddScoped<RegisterCommandHandler>();
 builder.Services.AddScoped<AddImageCommandHandler>();
 builder.Services.AddScoped<DeleteImageCommandHandler>();
 builder.Services.AddScoped<MakeImageFrontCommandHandler>();

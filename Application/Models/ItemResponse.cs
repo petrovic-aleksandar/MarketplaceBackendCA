@@ -13,7 +13,7 @@ namespace Marketplace.Application.Models
         public bool Deleted { get; set; }
         public DateTime CreatedAt { get; set; }
         public required UserResponse Seller { get; set; }
-        public Image? FrontImage { get; set; }
+        public ImageResponse? FrontImage { get; set; }
 
         public static ItemResponse FromItem(Item item)
         {
