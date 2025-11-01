@@ -2,6 +2,7 @@
 using Marketplace.Domain.Interface;
 using Marketplace.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Marketplace.Infrastructure.Repositories
 {
@@ -19,7 +20,7 @@ namespace Marketplace.Infrastructure.Repositories
 
         public async Task<List<Item>> GetByType(ItemType type)
         {
-            return await context.Item.Include(x => x.Type).Include(x => x.Seller).Where(x => x.Type == type).ToListAsync();
+            return await context.Item.Include(x => x.Seller).Include(x => x.Type).Where(x => x.Type == type && x.IsDeleted == false && x.IsActive == true).ToListAsync();
         }
 
         public async Task<Item?> Add(Item item)
