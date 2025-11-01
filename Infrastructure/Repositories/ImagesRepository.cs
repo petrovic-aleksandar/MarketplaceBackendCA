@@ -9,7 +9,7 @@ namespace Marketplace.Infrastructure.Repositories
     {
         public async Task<Image?> GetById(int id)
         {
-            return await context.Image.Where(x => x.Id == id).FirstOrDefaultAsync();
+            return await context.Image.Where(x => x.Id == id).Include(x => x.Item).FirstOrDefaultAsync();
         }
 
         public async Task<List<Image>> GetByItem(Item item)

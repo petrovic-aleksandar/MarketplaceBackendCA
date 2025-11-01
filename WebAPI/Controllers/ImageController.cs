@@ -2,6 +2,7 @@
 using Marketplace.Application.Images.Queries;
 using Marketplace.Application.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
 
 namespace WebAPI.Controllers
 {
@@ -21,9 +22,13 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("{itemId}"), DisableRequestSizeLimit]
-        public async Task<ActionResult<ImageResponse>> Upload(int itemId, AddImageCommand command)
+        public async Task<ActionResult<ImageResponse>> Upload(int itemId)
         {
-            return Ok(await addImageCommandHandler.Handle(command));
+            if (Request.Form.Files[0].Length == 0) return BadRequest();
+            var fileName = ContentDispositionHeaderValue.Parse(Request.Form.Files[0].ContentDisposition).FileName.Trim().ToString();
+            IFormFile image = Request.Form.Files[0];
+            return Ok(await addImageCommandHandler.Handle(new() { ItemId = itemId, ImageName = fileName, Image = image.OpenReadStream() }));
+                
         }
 
         [HttpPost("front/{id}")]
