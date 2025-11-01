@@ -53,7 +53,7 @@ builder.Services.AddScoped<MakeImageFrontCommandHandler>();
 builder.Services.AddScoped<GetImagesByItemQueryHandler>();
 builder.Services.AddScoped<ActivateItemCommandHandler>();
 builder.Services.AddScoped<AddItemCommandHandler>();
-builder.Services.AddScoped<ChangeItemOwnlerCommandHandler>();
+builder.Services.AddScoped<ChangeItemOwnerCommandHandler>();
 builder.Services.AddScoped<DeactivateItemCommandHandler>();
 builder.Services.AddScoped<DeleteItemCommandHandler>();
 builder.Services.AddScoped<UpdateItemCommandHandler>();

@@ -16,7 +16,7 @@ namespace WebAPI.Controllers
         GetItemsByTypeQueryHandler getItemsByTypeQueryHandler,
         ActivateItemCommandHandler activateItemCommandHandler,
         AddItemCommandHandler addItemCommandHandler,
-        ChangeItemOwnlerCommandHandler changeItemOwnlerCommandHandler,
+        ChangeItemOwnerCommandHandler changeItemOwnlerCommandHandler,
         DeactivateItemCommandHandler deactivateItemCommandHandler,
         DeleteItemCommandHandler deleteItemCommandHandler,
         UpdateItemCommandHandler updateItemCommandHandler,

@@ -2,7 +2,7 @@
 
 namespace Marketplace.Application.Items.Commands
 {
-    public class ChangeItemOwnlerCommandHandler(IItemsRepository itemsRepository, IUsersRepository usersRepository)
+    public class ChangeItemOwnerCommandHandler(IItemsRepository itemsRepository, IUsersRepository usersRepository)
     {
         public async Task<int> Handle(ChangeItemOwnerCommand command)
         {

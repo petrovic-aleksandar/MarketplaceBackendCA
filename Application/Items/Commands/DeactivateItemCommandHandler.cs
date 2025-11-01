@@ -8,7 +8,7 @@ namespace Marketplace.Application.Items.Commands
         {
             var existingItem = await itemsRepository.GetById(command.Id) ?? throw new Exception("Item not found");
             existingItem.IsActive = false;
-            var deactivatedItem = await itemsRepository.Delete(existingItem);
+            var deactivatedItem = await itemsRepository.Update(existingItem);
             return deactivatedItem == null ? throw new Exception("Failed to deactivate item") : deactivatedItem.Id;
         }
     }

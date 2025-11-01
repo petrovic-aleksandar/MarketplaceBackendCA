@@ -15,7 +15,7 @@ namespace Marketplace.Infrastructure.Repositories
 
         public async Task<List<Item>> GetBySeller(User seller)
         {
-            return await context.Item.Include(x => x.Type).Include(x => x.Seller).Where(x => x.Seller == seller).ToListAsync();
+            return await context.Item.Include(x => x.Type).Include(x => x.Seller).Where(x => x.Seller == seller && x.IsDeleted == false).ToListAsync();
         }
 
         public async Task<List<Item>> GetByType(ItemType type)
