@@ -100,4 +100,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCors("MarketplaceCorsPolicy");
+
 app.Run();
