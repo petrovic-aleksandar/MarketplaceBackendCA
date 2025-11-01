@@ -10,6 +10,7 @@ namespace Marketplace.Application.Auth.Command
         public async Task<TokenResponse?> Handle(LoginCommand command) 
         {
             var user = await usersRepository.GetByUsername(command.Username) ?? throw new Exception("User not found");
+            if (!user.IsActive) throw new Exception("User is not active");
             if (!HashingUtil.VerifyPassword(command.Password, user.Password)) throw new Exception("Invalid credentials");
             TokensUtil tokensUtil = new(usersRepository, configuration);
             return await tokensUtil.CreateTokenResponse(user);
