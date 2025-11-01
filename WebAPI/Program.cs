@@ -7,7 +7,9 @@ using Marketplace.Application.Transfers.Commands;
 using Marketplace.Application.Transfers.Queries;
 using Marketplace.Application.Users.Commands;
 using Marketplace.Application.Users.Queries;
+using Marketplace.Domain.Interface;
 using Marketplace.Infrastructure.Persistence;
+using Marketplace.Infrastructure.Repositories;
 using Marketplace.Infrastructure.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -34,7 +36,12 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddScoped<FileService>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IImagesRepository, ImagesRepository>();
+builder.Services.AddScoped<IItemsRepository, ItemsRepository>();
+builder.Services.AddScoped<IItemTypesRepository, ItemTypesRepository>();
+builder.Services.AddScoped<ITransfersRepository, TransfersRepository>();
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 builder.Services.AddScoped<AddImageCommandHandler>();
 builder.Services.AddScoped<DeleteImageCommandHandler>();
 builder.Services.AddScoped<MakeImageFrontCommandHandler>();
