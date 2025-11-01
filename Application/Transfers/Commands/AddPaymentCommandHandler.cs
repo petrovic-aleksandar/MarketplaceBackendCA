@@ -19,8 +19,11 @@ namespace Marketplace.Application.Transfers.Commands
                 Item = null
             };
 
-            var addedTransfer = await transfersRepository.AddTransfer(transfer);
-            return addedTransfer == null ? throw new Exception("Failed to add transfer") : addedTransfer.Id;
+            seller.Balance += command.Amount;
+            _ = await usersRepository.Update(seller) ?? throw new Exception("Failed to update seller balance");
+
+            var addedTransfer = await transfersRepository.AddTransfer(transfer) ?? throw new Exception("Failed to add transfer");
+            return addedTransfer.Id;
         }
     }
 }

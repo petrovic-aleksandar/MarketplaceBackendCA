@@ -9,7 +9,7 @@ namespace Marketplace.Infrastructure.Repositories
     {
         public async Task<List<Transfer>> GetByUser(User user) 
         {
-            return await context.Transfer.Where(t => t.Buyer != null && t.Buyer.Id == user.Id || t.Seller != null && t.Seller.Id == user.Id).ToListAsync();
+            return await context.Transfer.Where(t => t.Buyer != null && t.Buyer.Id == user.Id || t.Seller != null && t.Seller.Id == user.Id).Include(t => t.Buyer).Include(t => t.Seller).Include(t => t.Item).OrderByDescending(t => t.Id).ToListAsync();
         }
 
         public async Task<Transfer> AddTransfer(Transfer transfer)
